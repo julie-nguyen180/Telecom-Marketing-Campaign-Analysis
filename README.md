@@ -10,15 +10,22 @@ The latest marketing campaign conducted by our telecommunications company has yi
 ## Methodology
 ### Data Preparation
 The raw dataset comprised 41,180 current customer entries with 21 variables covering demographics, social, economic context, and campaign interactions. Cleaning steps involved:
+
 •	Handling Missing Values: 'Unknown' values were treated as missing and excluded.
+
 •	Handling Outliers: Significant outliers in 'age', 'duration', and 'campaign' were addressed using the IQR method.
+
 •	Standardizing and Transforming Data: Logarithmic transformation was applied to 'duration' and 'campaign', while StandardScaler standardized 'age' and other context features.
+
 •	Encoding Categorical Variables: One-hot encoding via pandas get_dummies was employed, resulting in a final dataset of 26,322 entries ready for modeling.
 
 ### Data Modelling
 Feature selection methods including Chi-square, Wrapper Method, and Permutation were used alongside exploratory data analysis for optimal feature selection. Machine learning models utilized encompassed:
+
 •	Parametric Models: Logistic Regression
+
 •	Non-parametric Models: Decision Trees, Random Forests, K-Nearest Neighbors
+
 Preprocessing addressed imbalances in the target variable (11% yes - 89% no) through techniques like under-sampling and maintaining balanced train/validation/test sets. Maximum likelihood estimation and Bayesian estimation were applied to tune model parameters and hyperparameters. Model performance was assessed based on AUC and F1-Score metrics, with a focus on the minority group.
 
 ## Result
@@ -37,5 +44,7 @@ Additionally, the data suggest that maintaining ongoing communication with previ
 
 ## Strategic Recommendations
 •	Segment Focus: Concentrate marketing efforts on the most responsive demographic segments, particularly the younger and older age groups.
+
 •	Economic Adjustment: Adapt marketing strategies in response to national economic conditions to optimize campaign timing and budget allocation.
+
 •	Communication Optimization: Increase focus on months with historically higher engagement and continue to engage customers who have been contacted in past campaigns. Prefer mobile communication to increase reach and effectiveness.
